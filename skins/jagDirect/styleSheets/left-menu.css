@@ -1,0 +1,127 @@
+/* ######### Marker List Vertical Menu ######### */
+
+a{
+	outline:none;
+}
+.markermenu{
+	margin-top:30px;
+	font-size:12px;
+	position: relative; /*Preserve this for "right" arrow images (added by script) to be positioned correctly*/
+	font-weight:normal !important;
+
+}
+
+.markermenu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0; 	
+}
+.markermenu ul li{
+	list-style:none;
+}
+.markermenu ul li a{
+	background:url(../styleImages/arrow.jpg) no-repeat;
+	background-position:5% 30%;
+	font-family:Tahoma;
+	font-size:12px;
+	color:#000;
+	display: block;
+	height:15px;
+	padding-left:25px;
+	text-decoration: none;  
+} 
+
+.markermenu ul li a:hover{
+
+	background:url(../styleImages/arrow-hover.jpg) no-repeat;
+	background-position:5% 30%;
+	color:#999;
+	font-weight:bold;
+}
+
+/* ######### Customized Drop Down ULs CSS (inherits from ddlevelsmenu-base.css) ######### */
+.blackwhite li{
+	text-align:left;
+}
+
+.blackwhite li a{
+	background:none;
+	font-weight:normal;
+
+}
+
+.blackwhite li a:hover{
+	background:#000;
+	color:#000000;
+}
+.inner-menu li{
+	padding-left:15px;
+}
+/* ######### Drop Down ULs CSS ######### */
+.ddsubmenustyle, .ddsubmenustyle ul{ /*topmost and sub ULs, respectively*/
+	font-family:Tahoma;
+	font-size:12px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	list-style-type: none;
+	background: #ffffff;
+	height:30px;
+	color:#000000;
+	visibility: hidden;
+
+	z-index: 100; 
+}
+.ddsubmenustyle li a{
+	background:url(../styleImages/arrow.jpg) no-repeat;
+	background-position:5% 50%;
+	display: block;
+	width: 200px; /*width of menu (not including side paddings)*/
+	color: #000000;
+	text-decoration: none;
+	padding-top:6px;
+	height:23px;
+	padding-left:23px;
+	border-bottom: 1px dotted #333;
+	font-weight:normal;
+}
+
+* html .ddsubmenustyle li{ /*IE6 CSS hack*/
+	display: inline-block;
+	color: #000;
+	width: 170px; /*width of menu (include side paddings of LI A*/
+}
+
+.ddsubmenustyle li a:hover{
+	background:url(../styleImages/arrow-hover.jpg) no-repeat;
+	background-position:5% 50%;
+	background-color:#ffd237;
+	color:#000;
+}
+
+/* ######### Neutral CSS  ######### */
+
+.downarrowpointer{ /*CSS for "down" arrow image added to top menu items*/
+	padding-left: 4px;
+	border: 0;
+}
+
+.rightarrowpointer{ /*CSS for "right" arrow image added to drop down menu items*/
+	position: absolute;
+	padding-top: 3px;
+	left: 100px;
+	border: 0;
+	display:none;
+}
+
+.ddiframeshim{
+	position: absolute;
+	z-index: 500;
+	background: transparent;
+	border-width: 0;
+	width: 0;
+	height: 0;
+	display: block;
+}

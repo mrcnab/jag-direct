@@ -1,0 +1,11 @@
+
+/* ######### Customized Drop Down ULs CSS (inherits from ddlevelsmenu-base.css) ######### */
+
+.blackwhite li a{
+background: white;
+}
+
+.blackwhite li a:hover{
+background: #336588;
+color: white;
+}

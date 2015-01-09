@@ -1,0 +1,64 @@
+<? 
+	include('inc/ini.php');
+	$lastestID	=	$_SESSION['newUserID'] ;
+	
+	$order_id = rand(1,100000000);
+?>
+<script language="JavaScript" type="text/javascript">
+	function SubmitForm()
+	{
+		document.getElementById("frmCart").submit();
+	}
+</script>
+	<table align="center" width="50%">
+	<tr><td>&nbsp;
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="frmCart" id="frmCart">
+					<input type="hidden" name="cmd" value="_xclick">
+					<input type="hidden" name="upload" value="1">
+					<input type="hidden" name="business" value="chy786@gmail.com">
+					<input type="hidden" name="return" value="http://www.tamarindspice.co.uk";>
+					<input type="hidden" name="cancel_return" value="http://www.tamarindspice.co.uk/failure.php";>
+                    <input type="hidden" name="notify_url" 		value="http://www.tamarindspice.co.uk/notify.php">	
+					<input type="hidden" name="currency_code" value="GBP">                 
+					<?
+					$count = 0;						
+						$total  = 0;
+						if($_SESSION['item_name'] != NULL || $_SESSION['item_name'] !='') {
+						foreach ($_SESSION['item_name'] as $key => $value) {
+							$product_id = $value['ItemId'];
+							$price = $value['item_price'];
+							$product_name =  $value['item_name'];	
+							$instructions = $value['special_insturcation'] ;
+							$order_type   = $_SESSION['deliveryType'];
+							
+							$content_obj->add_order_details($order_id, $product_id, $product_name, $price, 
+								$instructions, $order_type, $lastestID);
+							
+							$ItemId = $value['ItemId'];
+							$qty	= $value['Quantity'];
+							$price  = $value['item_price'];
+							$name   = $value['item_name'];				
+							$total  += $price;
+							$count++;	
+						?>
+					<? } } 
+					$deliverType = $_SESSION['deliveryType'];
+					if( $deliverType == 1)
+					{
+						$discount = number_format($total*0.1,2);
+						$grossTotal = $total - $discount;
+					}
+					?>
+                    <input type="hidden" name="item_number" value="Quote From Tamarind Spice">
+                    <input type="hidden" name="discount_amount" value="<?=$discount?>" />
+                    <input type="hidden" name="amount" value="<?=$total?>" />
+					<input type="hidden" name="shipping_1" 	value="0">
+                    <input type="hidden" name="custom" value="<?=$lastestID?>::<?=$order_id?>">
+	</form>
+	</td></tr>
+	</table>
+	<script language="JavaScript">
+	//alert('hi before submit');
+		SubmitForm();
+		//alert('hi after submit');
+	</script>

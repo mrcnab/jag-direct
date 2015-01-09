@@ -1,0 +1,1122 @@
+Sep 16 11:21:00 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 11:21:02 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<SetExpressCheckoutReq xmlns="urn:ebay:api:PayPalAPI">
+<SetExpressCheckoutRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:SetExpressCheckoutRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ReturnURL xsi:type="xsd:string">http://www.jagdirect.co.uk/modules/gateway/ExpressCheckout/return.php</ReturnURL>
+<CancelURL xsi:type="xsd:string">http://www.jagdirect.co.uk/cart.php?act=step5</CancelURL></ns4:SetExpressCheckoutRequestDetails></SetExpressCheckoutRequest></SetExpressCheckoutReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 11:21:02 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 11:21:02 jagdirect_api1.hotmail.com [info] SetExpressCheckout, Elapsed: 2216ms
+Sep 16 11:21:02 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 11:57:14 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 11:57:20 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 11:57:20 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 11:57:20 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 6082ms
+Sep 16 11:57:20 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 12:09:30 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 12:09:33 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 12:09:33 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 12:09:33 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 3172ms
+Sep 16 12:09:33 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 12:09:43 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 12:09:50 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 12:09:50 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 12:09:50 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 7106ms
+Sep 16 12:09:50 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 12:10:05 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 12:10:11 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">00</ExpMonth>
+<ExpYear xsi:type="xsd:int"></ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string"></CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 12:10:11 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 12:10:11 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 6141ms
+Sep 16 12:10:11 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 12:10:23 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 12:10:29 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 12:10:29 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 12:10:29 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 6019ms
+Sep 16 12:10:29 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 12:10:45 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 12:10:47 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 12:10:47 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 12:10:47 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 1402ms
+Sep 16 12:10:47 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 12:12:58 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 12:13:01 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 12:13:01 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 12:13:01 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 3010ms
+Sep 16 12:13:01 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:09:31 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 13:09:39 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:09:39 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:09:39 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 7654ms
+Sep 16 13:09:39 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:11:01 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 13:11:12 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:11:12 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:11:12 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 11751ms
+Sep 16 13:11:12 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:19:29 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.sandbox.paypal.com/2.0/
+Sep 16 13:19:40 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:19:40 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:19:40 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 10830ms
+Sep 16 13:19:40 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:30:54 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 13:30:56 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:30:56 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:30:56 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 1975ms
+Sep 16 13:30:56 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:31:32 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 13:31:39 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:31:39 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:31:39 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 6832ms
+Sep 16 13:31:39 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:37:39 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 13:37:50 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:37:50 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:37:50 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 10765ms
+Sep 16 13:37:50 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:37:55 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 13:37:57 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:37:57 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:37:57 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 2028ms
+Sep 16 13:37:57 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:41:15 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 13:41:26 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:41:26 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:41:26 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 11070ms
+Sep 16 13:41:26 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 13:41:26 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 13:41:33 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 13:41:33 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 13:41:33 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 7279ms
+Sep 16 13:41:33 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+Sep 16 14:11:56 jagdirect_api1.hotmail.com [debug] DEBUG setEndpoint: https://api-aa.paypal.com/2.0/
+Sep 16 14:12:04 jagdirect_api1.hotmail.com [debug] Request XML: <?xml version="1.0" encoding="UTF-8"?>
+
+<SOAP-ENV:Envelope  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:ns4="urn:ebay:apis:eBLBaseComponents"
+ SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+
+<RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" SOAP-ENV:mustUnderstand="1">
+<ns4:Credentials xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+<ns4:Username xsi:type="xsd:string">jagdirect_api1.hotmail.com</ns4:Username>
+<ns4:Password xsi:type="xsd:string">***</ns4:Password>
+<ns4:Signature xsi:nil="true"/>
+<ns4:Subject xsi:nil="true"/></ns4:Credentials></RequesterCredentials>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+
+<DoDirectPaymentReq xmlns="urn:ebay:api:PayPalAPI">
+<DoDirectPaymentRequest>
+<ns4:Version xsi:type="xsd:string">2.3</ns4:Version>
+<ns4:DoDirectPaymentRequestDetails xmlns="urn:ebay:apis:eBLBaseComponents">
+<PaymentAction>Sale</PaymentAction>
+<PaymentDetails>
+<OrderTotal xsi:type="xsd:string" currencyID="GBP">2.99</OrderTotal>
+<ShipToAddress>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></ShipToAddress></PaymentDetails>
+<CreditCard>
+<CreditCardType>Visa</CreditCardType>
+<CreditCardNumber xsi:type="xsd:string">***</CreditCardNumber>
+<ExpMonth xsi:type="xsd:int">11</ExpMonth>
+<ExpYear xsi:type="xsd:int">12</ExpYear>
+<CardOwner>
+<PayerName>
+<FirstName>Naveed</FirstName>
+<LastName>Asghar</LastName></PayerName>
+<PayerCountry>GB</PayerCountry>
+<Address>
+<Name xsi:type="xsd:string">Naveed
+	Asghar</Name>
+<Street1 xsi:type="xsd:string">aa</Street1>
+<Street2 xsi:type="xsd:string"></Street2>
+<CityName xsi:type="xsd:string">aa</CityName>
+<StateOrProvince xsi:type="xsd:string">aa</StateOrProvince>
+<Country xsi:type="xsd:string">GB</Country>
+<PostalCode xsi:type="xsd:string">aa</PostalCode></Address></CardOwner>
+<CVV2 xsi:type="xsd:string">123</CVV2></CreditCard>
+<IPAddress xsi:type="xsd:string">78.129.214.45</IPAddress></ns4:DoDirectPaymentRequestDetails></DoDirectPaymentRequest></DoDirectPaymentReq>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+Sep 16 14:12:04 jagdirect_api1.hotmail.com [debug] Response XML: 
+Sep 16 14:12:04 jagdirect_api1.hotmail.com [info] DoDirectPayment, Elapsed: 7723ms
+Sep 16 14:12:04 jagdirect_api1.hotmail.com [error] curl_exec error 60 SSL certificate problem, verify that the CA cert is OK. Details:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed

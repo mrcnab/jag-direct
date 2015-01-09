@@ -1,0 +1,138 @@
+[19-Jan-2010 17:11:21] PHP Warning:  fread() [<a href='function.fread'>function.fread</a>]: Length parameter must be greater than 0 in /home/titleweb/public_html/TZWeb/alpha-glow/classes/xtpl.php on line 904
+[19-Jan-2010 17:12:24] PHP Warning:  fread() [<a href='function.fread'>function.fread</a>]: Length parameter must be greater than 0 in /home/titleweb/public_html/TZWeb/alpha-glow/classes/xtpl.php on line 904
+[28-Jan-2010 11:32:42] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 11:33:45] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 11:33:51] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 11:34:10] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 11:34:37] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[28-Jan-2010 11:35:52] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 11:36:04] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 11:36:25] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 15:48:38] PHP Warning:  include_once(includes/functions.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:38] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/functions.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:38] PHP Fatal error:  Call to undefined function  fetchdbconfig() in /home/alphaglo/public_html/index.php on line 56
+[28-Jan-2010 15:48:39] PHP Warning:  include_once(includes/functions.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:39] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/functions.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:39] PHP Fatal error:  Call to undefined function  fetchdbconfig() in /home/alphaglo/public_html/index.php on line 56
+[28-Jan-2010 15:48:41] PHP Warning:  include_once(includes/functions.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:41] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/functions.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:41] PHP Fatal error:  Call to undefined function  fetchdbconfig() in /home/alphaglo/public_html/index.php on line 56
+[28-Jan-2010 15:48:42] PHP Warning:  include_once(includes/functions.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:42] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/functions.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/index.php on line 55
+[28-Jan-2010 15:48:42] PHP Fatal error:  Call to undefined function  fetchdbconfig() in /home/alphaglo/public_html/index.php on line 56
+[28-Jan-2010 15:51:33] PHP Warning:  include_once(includes/functions.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 40
+[28-Jan-2010 15:51:33] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/functions.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/cart.php on line 40
+[28-Jan-2010 15:51:33] PHP Fatal error:  Call to undefined function  fetchdbconfig() in /home/alphaglo/public_html/cart.php on line 41
+[28-Jan-2010 15:51:36] PHP Warning:  include_once(includes/functions.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 40
+[28-Jan-2010 15:51:36] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/functions.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/cart.php on line 40
+[28-Jan-2010 15:51:36] PHP Fatal error:  Call to undefined function  fetchdbconfig() in /home/alphaglo/public_html/cart.php on line 41
+[28-Jan-2010 21:49:39] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 21:50:09] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 21:50:28] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[28-Jan-2010 21:50:38] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 09:37:19] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:37:35] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:37:48] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:37:57] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 09:38:05] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 09:38:44] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:39:44] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:49:16] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:51:31] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:51:37] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 09:51:50] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 09:59:57] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:01:33] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:03:00] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:03:03] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:03:11] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:03:20] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 10:08:05] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:08:08] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:08:18] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:08:24] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 10:10:37] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:10:42] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:10:51] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/cart.inc.php on line 668
+[29-Jan-2010 10:11:05] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 373
+[29-Jan-2010 11:55:25] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 366
+[29-Jan-2010 11:57:42] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 366
+[29-Jan-2010 11:58:08] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 365
+[29-Jan-2010 11:58:43] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 365
+[29-Jan-2010 11:58:44] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 365
+[29-Jan-2010 11:58:45] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 365
+[29-Jan-2010 12:01:08] PHP Warning:  include(includes/content/gateway.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:01:08] PHP Warning:  include(includes/content/gateway.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:01:08] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'includes/content/gateway.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:02:42] PHP Parse error:  syntax error, unexpected '}' in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 382
+[29-Jan-2010 12:03:14] PHP Warning:  include(includes/content/gateway.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:03:14] PHP Warning:  include(includes/content/gateway.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:03:14] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'includes/content/gateway.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:03:16] PHP Warning:  include(includes/content/gateway.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:03:16] PHP Warning:  include(includes/content/gateway.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/cart.php on line 99
+[29-Jan-2010 12:03:16] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'includes/content/gateway.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/cart.php on line 99
+[31-Jan-2010 23:00:23] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[31-Jan-2010 23:30:46] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[01-Feb-2010 19:01:24] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[02-Feb-2010 11:18:39] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[02-Feb-2010 11:27:34] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[02-Feb-2010 11:29:24] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[02-Feb-2010 11:39:46] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[02-Feb-2010 17:32:58] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[03-Feb-2010 18:06:00] PHP Warning:  Invalid argument supplied for foreach() in /home/alphaglo/public_html/includes/content/gateway.inc.php on line 362
+[04-Feb-2010 14:35:11] PHP Warning:  include(includes/content/viewProd.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/index.php on line 135
+[04-Feb-2010 14:35:11] PHP Warning:  include(includes/content/viewProd.inc.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/alphaglo/public_html/index.php on line 135
+[04-Feb-2010 14:35:11] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'includes/content/viewProd.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alphaglo/public_html/index.php on line 135
+[09-Apr-2010 19:37:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/sessionStart.inc.php on line 39
+[09-Apr-2010 19:37:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/sessionStart.inc.php on line 39
+[09-Apr-2010 19:37:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/session.inc.php on line 95
+[09-Apr-2010 19:38:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/sessionStart.inc.php on line 39
+[09-Apr-2010 19:38:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/sessionStart.inc.php on line 39
+[09-Apr-2010 19:38:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/session.inc.php on line 95
+[09-Apr-2010 19:38:35] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/sessionStart.inc.php on line 39
+[09-Apr-2010 19:38:35] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/sessionStart.inc.php on line 39
+[09-Apr-2010 19:38:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/titleweb/public_html/TZWeb/jag-direct/includes/global.inc.php:16) in /home/titleweb/public_html/TZWeb/jag-direct/includes/session.inc.php on line 95
+[06-May-2010 16:54:34] PHP Parse error:  syntax error, unexpected $end in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/index.inc.php on line 78
+[07-May-2010 13:33:22] PHP Warning:  fread() [<a href='function.fread'>function.fread</a>]: Length parameter must be greater than 0 in /home/titleweb/public_html/TZWeb/jag-direct/classes/xtpl.php on line 904
+[07-Jul-2010 18:13:29] PHP Fatal error:  Call to undefined method cart::updateDeliver() in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/cart.inc.php on line 126
+[09-Jul-2010 14:16:59] PHP Fatal error:  Call to undefined function  strlent() in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/viewProd.inc.php on line 232
+[09-Jul-2010 14:17:01] PHP Fatal error:  Call to undefined function  strlent() in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/viewProd.inc.php on line 232
+[09-Jul-2010 14:18:29] PHP Parse error:  syntax error, unexpected ')' in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/viewProd.inc.php on line 234
+[09-Jul-2010 14:18:30] PHP Parse error:  syntax error, unexpected ')' in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/viewProd.inc.php on line 234
+[09-Jul-2010 14:22:39] PHP Parse error:  syntax error, unexpected '}' in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/viewProd.inc.php on line 245
+[09-Jul-2010 14:22:47] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/titleweb/public_html/TZWeb/jag-direct/includes/content/viewProd.inc.php on line 231
+[16-Sep-2010 11:21:02] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/ExpressCheckout/transfer.inc.php on line 104
+[16-Sep-2010 11:28:40] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/ExpressCheckout/transfer.inc.php on line 104
+[16-Sep-2010 11:29:01] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/ExpressCheckout/transfer.inc.php on line 104
+[16-Sep-2010 11:32:36] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/ExpressCheckout/transfer.inc.php on line 104
+[16-Sep-2010 11:35:44] PHP Parse error:  syntax error, unexpected $end in /home/jagdirec/public_html/modules/gateway/ExpressCheckout/transfer.inc.php on line 217
+[16-Sep-2010 11:36:11] PHP Fatal error:  Call to a member function setDoDirectPaymentRequestDetails() on a non-object in /home/jagdirec/public_html/modules/gateway/ExpressCheckout/transfer.inc.php on line 98
+[16-Sep-2010 11:42:03] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[16-Sep-2010 11:55:45] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[16-Sep-2010 11:57:20] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[16-Sep-2010 12:10:47] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[16-Sep-2010 13:09:39] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 166
+[16-Sep-2010 13:11:12] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 166
+[16-Sep-2010 13:19:40] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 166
+[16-Sep-2010 13:19:57] PHP Fatal error:  Class 'TransactionSearchRequestType' not found in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 82
+[16-Sep-2010 13:20:00] PHP Fatal error:  Class 'TransactionSearchRequestType' not found in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 82
+[16-Sep-2010 13:30:56] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[16-Sep-2010 13:37:57] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 166
+[16-Sep-2010 13:41:26] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 166
+[16-Sep-2010 13:45:14] PHP Fatal error:  Class 'CallerServices' not found in /home/jagdirec/public_html/pear/PayPal.php on line 87
+[16-Sep-2010 13:46:10] PHP Fatal error:  Class 'CallerServices' not found in /home/jagdirec/public_html/pear/PayPal.php on line 87
+[16-Sep-2010 13:46:14] PHP Fatal error:  Class 'CallerServices' not found in /home/jagdirec/public_html/pear/PayPal.php on line 87
+[16-Sep-2010 13:47:20] PHP Fatal error:  Class 'CallerServices' not found in /home/jagdirec/public_html/pear/PayPal.php on line 87
+[16-Sep-2010 13:49:03] PHP Fatal error:  Call to undefined function  hash_call() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 168
+[16-Sep-2010 13:49:43] PHP Fatal error:  Call to undefined function  hash_call() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 168
+[16-Sep-2010 13:50:15] PHP Fatal error:  Call to a member function hash_call() on a non-object in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 168
+[16-Sep-2010 14:12:04] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[01-Oct-2010 09:16:10] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[01-Oct-2010 10:18:11] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[01-Oct-2010 10:18:47] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[05-Oct-2010 15:15:25] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[07-Oct-2010 10:16:28] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[07-Oct-2010 17:40:42] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[08-Oct-2010 13:58:51] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[07-Jul-2011 13:22:55] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165
+[19-Apr-2012 11:54:05] PHP Fatal error:  Call to undefined method SOAP_Fault::getAck() in /home/jagdirec/public_html/modules/gateway/DirectPayment/form.inc.php on line 165

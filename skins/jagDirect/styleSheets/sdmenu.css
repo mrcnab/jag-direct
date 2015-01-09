@@ -1,0 +1,66 @@
+
+
+.left-nav {
+	width: 188px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.left-nav div {
+	overflow: hidden;
+}
+
+.left-nav-bg {
+	background-image:url(../styleImages/list-bg.jpg);
+	background-position:bottom center;
+	background-repeat:no-repeat;
+}
+
+.left-nav div.collapsed {
+	height: 30px;
+}
+
+.sptr {
+	padding:5px 0px 2px 0px;
+	margin:0px;
+	display:block;
+	text-align:left;
+}
+
+.left-nav div span {
+	display: block !important;
+	padding: 8px 10px !important;
+	font-weight: bold !important;
+	color: #fff !important;
+	font-family:tahoma, arial, "times New Roman" !important;
+	font-size: 12px !important;
+	background-image:url(../styleImages/drop-arrow.jpg);
+	background-repeat:no-repeat;
+	background-position:170px 15px;
+	cursor:pointer !important;
+}
+
+.left-nav div.collapsed span {
+	background-image:url(../styleImages/arrow-yellow.jpg);
+	background-repeat:no-repeat;
+	background-position:170px 12px;
+}
+
+.left-nav div a {
+	padding: 5px 25px;
+	display: block;
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.left-nav div a.current {
+	color: #f1d490;
+}
+
+.left-nav div a:hover {
+	color: #f1d490;
+	text-decoration: none;
+}
+
+
